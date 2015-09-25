@@ -1,0 +1,29 @@
+# Configuration file for Gammu SMS Daemon
+
+# Gammu library configuration, see gammurc(5)
+[gammu]
+# Please configure this!
+port = /dev/ttyACM0 # Device name
+connection = at
+model = at
+
+# Debugging
+#logformat = textall
+
+# SMSD configuration, see gammu-smsdrc(5)
+[smsd]
+
+RunOnReceive = /var/spool/gammu/sms2email.sh # Script that runs when a new SMS is received
+
+service = files
+#logfile = syslog
+# Increase for debugging information
+debuglevel = 2
+logfile = /var/log/gammu.log
+
+# Paths where messages are stored
+inboxpath = /var/spool/gammu/inbox/
+outboxpath = /var/spool/gammu/outbox/
+sentsmspath = /var/spool/gammu/sent/
+errorsmspath = /var/spool/gammu/error/
+
