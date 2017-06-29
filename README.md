@@ -14,7 +14,7 @@ Gammu-smsd supported device: http://wammu.eu/phones/
 
 The script **sms2mail.sh** in the folder **scripts** is used by **gammu-smsd**.
 
-When new SMS is recevied its will be send by e-mail and an automatic message will be send by SMS to message sender.
+When new SMS is recevied it will be send by e-mail and an automatic message will be send by SMS to message sender.
 
 
 ## Debian/Ubuntu Configuration
